@@ -5,7 +5,7 @@ async function getdata() {
     console.log("Updating map with real time data")
     const response = await fetch(corona_url);
     const data = await response.json();
-    console.log(data);
+//     console.log(data);
     data.forEach(element => {
        
         latitude = element.countryInfo.lat;
